@@ -1,9 +1,34 @@
 ---
-title: /
-layout: home
-permalink: /
+layout: default
 ---
 
-# Lorem ipsum
+# `$ whoami`
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Yung**. 
+Undergraduate (2023 Intake) majoring in Artificial Intelligence @Soochow University.
+
+## `> cat /etc/research_interests`
+
+My current compute bandwidth is allocated to:
+* **Time-Series Forecasting**: Pushing the boundaries of long-horizon prediction.
+* **Continual Learning**: Cross-domain adaptation, currently iterating on **PICOL-Net** for battery State of Health (SOH) prediction.
+
+## `> neofetch --stdout`
+
+* **OS**: Arch Linux (Wayland/Niri/Hyprland)
+* **Editor**: Neovim (LazyVim)
+* **Peripherals**: HHKB Professional
+
+---
+
+## `> ls -l ./recent_posts/`
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <span>[{{ post.date | date: "%Y-%m-%d" }}]</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+[`./view_archive.sh`](/archive.md)
