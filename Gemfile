@@ -11,3 +11,4 @@ gem "base64"
 gem "bigdecimal"
 
 # 主题保留原来的设定
+gem "jekyll-seo-tag"

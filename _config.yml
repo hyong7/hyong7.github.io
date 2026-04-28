@@ -13,3 +13,6 @@ style: dark
 header_pages:
   - about.markdown
   - archive.md
+
+plugins:
+  - jekyll-seo-tag
