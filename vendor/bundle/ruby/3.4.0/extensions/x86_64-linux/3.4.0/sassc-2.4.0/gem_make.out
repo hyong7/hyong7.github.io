@@ -1,0 +1,19 @@
+current directory: /home/yung/hyong7.github.io/vendor/bundle/ruby/3.4.0/gems/sassc-2.4.0/ext
+/usr/bin/ruby extconf.rb
+Source locally installed gems is ignoring #<Bundler::StubSpecification name=sassc version=2.4.0 platform=ruby> because it is missing extensions
+/usr/lib/ruby/3.4.0/bundler/definition.rb:702:in 'Bundler::Definition#materialize': Could not find sassc-2.4.0 in locally installed gems (Bundler::GemNotFound)
+	from /usr/lib/ruby/3.4.0/bundler/definition.rb:240:in 'Bundler::Definition#specs'
+	from /usr/lib/ruby/3.4.0/bundler/definition.rb:312:in 'Bundler::Definition#specs_for'
+	from /usr/lib/ruby/3.4.0/bundler/runtime.rb:18:in 'Bundler::Runtime#setup'
+	from /usr/lib/ruby/3.4.0/bundler.rb:165:in 'Bundler.setup'
+	from /usr/lib/ruby/3.4.0/bundler/setup.rb:32:in 'block in <top (required)>'
+	from /usr/lib/ruby/3.4.0/bundler/ui/shell.rb:177:in 'Bundler::UI::Shell#with_level'
+	from /usr/lib/ruby/3.4.0/bundler/ui/shell.rb:122:in 'Bundler::UI::Shell#silence'
+	from /usr/lib/ruby/3.4.0/bundler/setup.rb:32:in '<top (required)>'
+	from <internal:/usr/lib/ruby/3.4.0/rubygems/core_ext/kernel_require.rb>:136:in 'Kernel#require'
+	from <internal:/usr/lib/ruby/3.4.0/rubygems/core_ext/kernel_require.rb>:136:in 'Kernel#require'
+	from /usr/lib/ruby/3.4.0/rubygems.rb:1417:in '<top (required)>'
+	from <internal:gem_prelude>:2:in 'Kernel#require'
+	from <internal:gem_prelude>:2:in '<internal:gem_prelude>'
+
+extconf failed, exit code 1

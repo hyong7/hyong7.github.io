@@ -1,13 +1,14 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
-gemspec
 
+# 强制使用 4.3 以上的 Jekyll 和 3.0 以上的 sass 转换器
+gem "jekyll", "~> 4.3"
+gem "jekyll-sass-converter", "~> 3.0"
 
-gem 'webrick'
+# 之前加的那几个 Ruby 3.4 兼容包保留
+gem "csv"
+gem "webrick"
+gem "base64"
+gem "bigdecimal"
 
-# Use libsass via jekyll-sass-converter 2.x to avoid Dart Sass
-# deprecation warnings for @import during local development.
-# Pin Jekyll to a version compatible with converter 2.x.
-gem 'jekyll', '~> 4.2.2'
-gem 'jekyll-sass-converter', '~> 2.2'
+# 主题保留原来的设定
+gem "jekyll-theme-console"
